@@ -169,12 +169,35 @@ header {
   color: #4285f4;
 }
 
-.facts {
+.facts-container {
+  display: flex;
+  flex-wrap: wrap;
   background-color: white;
+  text-align: center;
 }
+
+.facts-button1 {
+  width: 95%;
+  height: 3rem;
+  position: relative;
+  background-color: #540b51;
+  color: white;
+  border-radius: 5px;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media (max-width: 767px) {
   .navbar a{
     visibility: hidden;
   }
 }
+
+@media (min-width: 768px and max-width: 1024px) {
+  header {
+    flex-direction: column;
+  }
+  
